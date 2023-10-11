@@ -7,18 +7,19 @@ function Footer() {
     return (
         <>
             <div className="footer-container">
-                <h1 footer-header>urban rebirth</h1>
-                <p>©2023 urban rebirth society</p>
-                <p>green bay, wi</p>
-                <p>555.123.9988</p>
-                <p>contact@urbanrebirth.org</p>
-                <div className="footer-icons">
-                    <img src={facebook} alt="facebook logo" />
-                    <img src={instagram} alt="instagram logo" />
-                    <img src={youtube} alt="youtube logo" />
-                    <img src={twitter} alt="twitter logo" />
+                <div className='footer-inner-container'>
+                    <h1 className='footer-header'>urban rebirth</h1>
+                    <p className='footer-content'>©2023 urban rebirth society</p>
+                    <p className='footer-content'>green bay, wi</p>
+                    <p className='footer-content'>555.123.9988</p>
+                    <p className='footer-content'>contact@urbanrebirth.org</p>
+                    <div className="footer-icons">
+                        <img src={facebook} alt="facebook logo" />
+                        <img src={instagram} alt="instagram logo" />
+                        <img src={youtube} alt="youtube logo" />
+                        <img src={twitter} alt="twitter logo" />
+                    </div>
                 </div>
-
             </div>
 
         </>
