@@ -19,7 +19,7 @@ function About() {
             <section className="staff-container">
                 <div className="staff">
                     <div id="toni" className="flex staff-profile">
-                        <img id="toni-pic" className="staff-portrait relative" src={toni} alt="Toni Garcia portrait" />
+                        <div id="toni-pic" className="relative"><img id="toni-pic" className="staff-portrait" src={toni} alt="Toni Garcia portrait" /></div>
                         <div className="staff-details">
                             <p className="name">Toni Garcia</p>
                             <p className="title">Executive Director</p>
