@@ -58,6 +58,21 @@ button {
   position: relative;
 }
 
+.outline-text {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1rem;
+  padding-left: 5.3rem;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* HEADER */
 #landing-header {
   display: flex;
@@ -266,7 +281,7 @@ button {
   padding-left: 2.25rem;
 }
 
-#about-title-large {
+/* #about-title-large {
   font-size: 4rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
@@ -279,7 +294,7 @@ button {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+} */
 
 .staff-container {
   margin-block: 4rem;

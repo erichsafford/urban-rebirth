@@ -13,7 +13,7 @@ function About() {
             </header>
             <div className="horizontal-bar centered-div">
                 <p id="about-title-small">WE ARE</p>
-                <h1 id="about-title-large">URBAN REBIRTH</h1>
+                <h1 className="outline-text">URBAN REBIRTH</h1>
             </div>
 
             <section className="staff-container">
