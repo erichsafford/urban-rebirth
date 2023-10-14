@@ -1,11 +1,17 @@
 import urbanGarden from './assets/urbangarden.png'
 import fariswheel from './assets/fariswheelgirl.png'
 import skateboardcouple from './assets/skateboardersholdinghands.png'
+import URlogo from './assets/logos/urban-rebirth.png'
+import Header from './Header'
 
 function LandingPage() {
 
     return (
         <>
+        <header id='landing-header'>
+            <img className='landing-logo' src={URlogo} alt="urban rebirth logo" />
+            <Header />
+        </header>
 
         <div className="horizontal-bar"></div>
         <div className="vertical-bar"></div>

@@ -40,13 +40,12 @@ button {
 }
 
 /* HEADER */
-.header-container {
+#landing-header {
   display: flex;
   justify-content: space-between;
-  overflow-y: visible;
   height: 7.38rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  overflow-y: visible;
+  padding-inline: 2rem;
 }
 
 .landing-logo {
@@ -55,18 +54,11 @@ button {
   margin-top: 1.6rem;
 }
 
-.header-elements {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-}
-
 .header-links {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
   cursor: pointer;
-  background-color: pink;
 }
 
 .header-link {
@@ -106,6 +98,7 @@ button {
   display: flex;
   align-items: center;
   gap: 1.69rem;
+  margin-left: 7rem;
 }
 
 .donate-button {
