@@ -1,4 +1,5 @@
 # Urban Rebirth Organization Webpage
+Author: Erich Gaul
 
 This project was created for a fictional urban renewal group called Urban Rebirth.  The site layout was inspired by [Mercy Corps](mercycorps.org).
 
@@ -8,12 +9,15 @@ This project was created for a fictional urban renewal group called Urban Rebirt
 - CSS
 - React + React Router
 - Git
+- Markdown documentation/readme
 
 ### Project Goals
 - Create a fully fleshed-out site for a fictional organization
 - Utilize React components to reduce code duplication and improve efficiency of implementation
 - Utilize React hooks such as useState for dynamically changing pages
 - Implement React Router for client-side routing
+- Dynamic layout for different sized devices
+- Accessability considered (alt text, symantic HTML, focus vs. hover, contrast, etc.)
 
 ### Asthetic Goals
 - Simple and polished look
