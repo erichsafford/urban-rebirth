@@ -66,6 +66,7 @@ button {
   align-items: flex-start;
   gap: 5rem;
   cursor: pointer;
+  background-color: pink;
 }
 
 .header-link {
