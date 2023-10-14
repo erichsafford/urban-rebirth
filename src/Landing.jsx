@@ -14,7 +14,6 @@ function LandingPage() {
         </header>
 
         <div className="horizontal-bar"></div>
-        <div className="vertical-bar"></div>
         <div className='tagline-container'>
             <p className="tagline text-black">
             we <span className='text-red emphasis'>empower</span> communities to take control of their neighborhood, their block, their green spaces, and more.</p>
