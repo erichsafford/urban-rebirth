@@ -8,7 +8,7 @@ import toni from "./assets/staff/tonigarcia.svg"
 function About() {
     return (
         <>
-            <header id="about-header">
+            <header id="normal-header">
                 <Header />
             </header>
             <div className="horizontal-bar centered-div">

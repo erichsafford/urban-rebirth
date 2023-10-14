@@ -7,7 +7,10 @@ This project was created for a fictional urban renewal group called Urban Rebirt
 - Figma
 - HTML
 - CSS
-- React + React Router
+- React
+    - React Router
+    - Reusable componenets
+    - Conditional rendering
 - Git
 - Markdown documentation/readme
 
