@@ -16,12 +16,12 @@ const photoArrays = [
     businessPhotos
 ]
 
-function ImageSlider() {
-    // const [photoIndex, setPhotoIndex] = useState[0]
+function ImageSlider(images) {
+    const [photoIndex, setPhotoIndex] = useState[0]
 
     return (
         <>
-            <img src={photoArrays[0][0]} alt="" />
+            <img src={images[photoIndex]} alt="" />
         </>
     )
 }
