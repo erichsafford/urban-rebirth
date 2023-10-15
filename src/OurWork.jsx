@@ -18,6 +18,7 @@ function OurWork() {
             <div className="horizontal-bar centered-div">
                 <h1 className="outline-text">OUR WORK</h1>
             </div>
+
             <div className="services-picker">
                 <div className="service" id="greenspace">
                     <img src={greenspace} alt="Icon of hand holding plant" />

@@ -82,7 +82,7 @@ button {
   padding-inline: 2rem;
 }
 
-#about-header {
+#normal-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -340,5 +340,26 @@ button {
   background-color: var(--primary-red);
   top: -100px;
   left: 50%;
+}
+
+/* OUR WORK */
+.services-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 6.25rem;
+  row-gap: 1.25rem;
+  padding: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  align-items: center;
+  width: 11rem;
+  text-align: center;
 }
 
