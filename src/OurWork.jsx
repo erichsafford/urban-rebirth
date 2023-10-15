@@ -6,7 +6,7 @@ import community from "./assets/icons/community.png"
 import greenspace from "./assets/icons/greenspace.png"
 import repair from "./assets/icons/repair.png"
 import smallbusiness from "./assets/icons/smallbusiness.png"
-import gardenwoman from "./assets/ourworkphotos/greenspace/gardeningwoman.png"
+// import gardenwoman from "./assets/ourworkphotos/greenspace/gardeningwoman.png"
 import { useReducer } from "react";
 
 
@@ -53,7 +53,7 @@ function OurWork() {
                     </div>
                 </div>
                 <div className="photo-switcher our-work-right">
-                    <img src={gardenwoman} alt="Woman gardening" />
+                    {/* <img src={gardenwoman} alt="Woman gardening" /> */}
                 </div>
             </section>
             <div className="horizontal-bar"></div>
