@@ -1,0 +1,70 @@
+/* ABOUT PAGE */
+#about-title-small {
+    font-size: 2.25rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.1575rem;
+    position: absolute;
+    top: -40px;
+    padding-left: 2.25rem;
+  }
+
+  .staff-container {
+    margin-block: 4rem;
+    margin-inline: 7rem;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .staff {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .staff-profile {
+    align-items: center;
+    padding-left: 2.25rem;
+    gap: 2.25rem;
+  }
+
+  .staff-details {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.625rem;
+    letter-spacing: 0.2625rem;
+    text-transform: uppercase;
+  }
+
+  .staff-details .name {
+    font-weight: var(--font-weight-bold);
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+  }
+
+  #about-bold {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+  }
+
+  #about-normal {
+   font-size: 1.25rem;
+   line-height: 1.625rem;
+   margin-top: 2rem;
+   text-transform: uppercase;
+  }
+
+  #toni-pic::before {
+    content: " ";
+    width: 6.25rem;
+    height: 60rem;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-red);
+    top: -100px;
+    left: 50%;
+  }

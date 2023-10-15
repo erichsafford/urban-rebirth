@@ -1,4 +1,5 @@
 import search from './assets/search.svg'
+import './styles/header.css'
 
 
 

@@ -1,0 +1,82 @@
+#landing-header {
+    display: flex;
+    justify-content: space-between;
+    height: 7.38rem;
+    overflow-y: visible;
+    padding-inline: 2rem;
+}
+
+.landing-logo {
+    width: 13.36281rem;
+    height: 20.5625rem;
+    margin-top: 1.6rem;
+}
+
+/* TAGLINE */
+
+.tagline-container {
+    margin-right: 5.31rem;
+    margin-left: 20rem;
+    margin-top: 3rem;
+  }
+
+  .tagline {
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-normal);
+    line-height: 2.9375rem;
+    letter-spacing: 0.315rem;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .emphasis {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* PICTURE SECTION */
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.75rem;
+    margin-top: 3rem;
+  }
+
+  .picture-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .picture-title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.525rem;
+    text-transform: uppercase;
+  }
+
+  .skateboard-couple {
+    position: relative;
+  }
+
+  .skateboard-couple::before {
+    content: " ";
+    width: 6.25rem;
+    height: 60rem;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-red);
+    top: -275px;
+  }
+
+  .skateboard-couple::after {
+    content: " ";
+    height: 6.25rem;
+    width: 70rem;
+    position: absolute;
+    background-color: var(--primary-red);
+    z-index: -1;
+    right: 0;
+    bottom: 50%
+  }

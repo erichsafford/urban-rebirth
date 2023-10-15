@@ -1,0 +1,62 @@
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    cursor: pointer;
+  }
+
+  .header-link {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.1125rem;
+    text-transform: uppercase;
+    color: var(--primary-black);
+    list-style: none;
+    text-align: center;
+    transition: color 350ms;
+    position: relative;
+    padding-block: .3rem;
+  }
+
+  .header-link:hover {
+    color: var(--primary-red);
+  }
+
+  .header-link::after {
+    content: ' ';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background-color: var(--primary-red);
+    transition: all ease-in-out 350ms;
+  }
+
+  .header-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .search-donate {
+    display: flex;
+    align-items: center;
+    gap: 1.69rem;
+    margin-left: 7rem;
+  }
+
+  .donate-button {
+    width: 6.9375rem;
+    height: 3rem;
+    font-family: var(--brand-font);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1125rem;
+    border: none;
+    transition: scale 350ms;
+  }
+
+  .donate-button:hover {
+    scale: 1.1;
+  }

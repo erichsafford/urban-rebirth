@@ -9,6 +9,7 @@ import smallbusiness from "./assets/icons/smallbusiness.png"
 import ourWorkBlurbs from "./ourWorkBlurbs.jsx"
 import ImageSlider from "./ImageSlider";
 import { useState } from "react";
+import './styles/ourWork.css'
 
 
 

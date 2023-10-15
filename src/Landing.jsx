@@ -3,6 +3,8 @@ import fariswheel from './assets/fariswheelgirl.png'
 import skateboardcouple from './assets/skateboardersholdinghands.png'
 import URlogo from './assets/logos/urban-rebirth.png'
 import Header from './Header'
+import Footer from './Footer'
+import './styles/landing.css'
 
 function LandingPage() {
 
@@ -34,6 +36,7 @@ function LandingPage() {
             </div>
         </div>
         <div className="horizontal-bar"></div>
+        <Footer />
       </>
 
     )

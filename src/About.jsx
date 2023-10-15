@@ -4,6 +4,7 @@ import hannah from "./assets/staff/hannahalvarez.png"
 import paul from "./assets/staff/paulgabrielson.svg"
 import richard from "./assets/staff/richardfox.svg"
 import toni from "./assets/staff/tonigarcia.svg"
+import "./styles/about.css"
 
 function About() {
     return (
