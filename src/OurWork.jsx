@@ -9,8 +9,35 @@ import smallbusiness from "./assets/icons/smallbusiness.png"
 // import gardenwoman from "./assets/ourworkphotos/greenspace/gardeningwoman.png"
 import { useReducer } from "react";
 
+function reducer(state, action) {
+    switch (action.type) {
+        case 'community': {
+            break
+        }
+        case 'design': {
+            break
+        }
+        case 'cleanup': {
+            break
+        }
+        case 'greenSpace': {
+            break
+        }
+        case 'repair': {
+            break
+        }
+        case 'business': {
+            break
+        }
+        default: {
+
+        }
+    }
+}
 
 function OurWork() {
+    const [state, dispatch] = useReducer(reducer, 'greenSpace')
+
     return (
         <>
             <header id="normal-header">
@@ -53,7 +80,7 @@ function OurWork() {
                     </div>
                 </div>
                 <div className="photo-switcher our-work-right">
-                    {/* <img src={gardenwoman} alt="Woman gardening" /> */}
+                    <ImagSlider images={state.current}/>
                 </div>
             </section>
             <div className="horizontal-bar"></div>
