@@ -343,15 +343,28 @@ button {
 }
 
 /* OUR WORK */
+.our-work {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+
+.our-work-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .services-picker {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 11rem 11rem 11rem;
   grid-template-rows: 1fr 1fr;
-  column-gap: 6.25rem;
-  row-gap: 1.25rem;
-  padding: 2rem;
   align-items: center;
   justify-items: center;
+  row-gap: 1.25rem;
+  column-gap: 6.25rem;
+  width: min-content;
 }
 
 .service {
@@ -360,6 +373,16 @@ button {
   flex-shrink: 1;
   align-items: center;
   width: 11rem;
+  text-align: center;
+}
+
+.our-work-blurb {
+  text-transform: uppercase;
+  width: 728px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  letter-spacing: 0.1125rem;
   text-align: center;
 }
 
