@@ -6,12 +6,13 @@ import community from "./assets/icons/community.png"
 import greenspace from "./assets/icons/greenspace.png"
 import repair from "./assets/icons/repair.png"
 import smallbusiness from "./assets/icons/smallbusiness.png"
+import ourWorkBlurbs from "./ourWorkBlurbs.jsx"
 import { useState } from "react";
 
 
 
 function OurWork() {
-    cost [activeService, setActiveService] = useState('greenSpace')
+    const [activeService, setActiveService] = useState('greenSpace')
 
     function handleClick(action) {
         switch (action) {
@@ -38,6 +39,9 @@ function OurWork() {
         }
     }
 
+    // Find the blurb for the active service
+    const activeServiceBlurb = ourWorkBlurbs.find(blurb => blurb.service === activeService)
+
     return (
         <>
             <header id="normal-header">
@@ -50,37 +54,37 @@ function OurWork() {
             <section className="our-work">
                 <div className="our-work-left">
                     <div className="services-picker">
-                        <div onClick={handleClick('greenSpace')} className="service" id="greenspace">
+                        <div onClick={() => handleClick('greenSpace')} className="service" id="greenspace">
                             <img src={greenspace} alt="Icon of hand holding plant" />
                             <p className="service-subtitle">GREEN SPACE</p>
                         </div>
-                        <div onClick={handleClick('cleanup')} className="service" id="cleanup">
+                        <div onClick={() => handleClick('cleanup')} className="service" id="cleanup">
                             <img src={cleanup} alt="Icon of a trash can" />
                             <p className="service-subtitle">CLEANUP</p>
                         </div>
-                        <div onClick={handleClick('business')} className="service" id="smallbusiness">
+                        <div onClick={() => handleClick('business')} className="service" id="smallbusiness">
                             <img src={smallbusiness} alt="Icon of two hands shaking" />
                             <p className="service-subtitle">SMALL BUSINESS</p>
                         </div>
-                        <div onClick={handleClick('community')} className="service" id="community">
+                        <div onClick={() => handleClick('community')} className="service" id="community">
                             <img src={community} alt="Icon of a group of people" />
                             <p className="service-subtitle">COMMUNITY</p>
                         </div>
-                        <div onClick={handleClick('design')} className="service" id="architecture">
+                        <div onClick={() => handleClick('design')} className="service" id="architecture">
                             <img src={architecture} alt="Icon of architecture tools" />
                             <p className="service-subtitle">ARCHITECTURE & DESIGN</p>
                         </div>
-                        <div onClick={handleClick('repair')} className="service" id="repair">
+                        <div onClick={() => handleClick('repair')} className="service" id="repair">
                             <img src={repair} alt="Icon of a hammer and saw" />
                             <p className="service-subtitle">REPAIR/BUILD</p>
                         </div>
                     </div>
                     <div className="our-work-blurb">
-                        <p>at urban rebirth, we create vibrant urban green spaces, transforming neighborhoods into lush oases. Our services include designing and maintaining parks and promoting sustainable gardening in the heart of the city. partner with us to build a greener, healthier, and more sustainable urban landscape for all.</p>
+                        <p>{activeServiceBlurb ? activeServiceBlurb.text : 'Service not found'}</p>
                     </div>
                 </div>
                 <div className="photo-switcher our-work-right">
-                    <ImagSlider images={activeService}/>
+                    {/* <ImageSlider images={activeService}/> */}
                 </div>
             </section>
             <div className="horizontal-bar"></div>
