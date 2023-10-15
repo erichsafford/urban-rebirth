@@ -7,6 +7,7 @@ import greenspace from "./assets/icons/greenspace.png"
 import repair from "./assets/icons/repair.png"
 import smallbusiness from "./assets/icons/smallbusiness.png"
 import ourWorkBlurbs from "./ourWorkBlurbs.jsx"
+import ImageSlider from "./ImageSlider";
 import { useState } from "react";
 
 
@@ -83,8 +84,15 @@ function OurWork() {
                         <p>{activeServiceBlurb ? activeServiceBlurb.text : 'Service not found'}</p>
                     </div>
                 </div>
-                <div className="photo-switcher our-work-right">
-                    {/* <ImageSlider images={activeService}/> */}
+                <div
+                    style={{
+                        maxWidth: "700px",
+                        width: "100%",
+                        aspectRatio: "2/3",
+                        margin: "0 auto"
+                    }}
+                  className="photo-switcher our-work-right">
+                    <ImageSlider images={activeService}/>
                 </div>
             </section>
             <div className="horizontal-bar"></div>

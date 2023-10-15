@@ -9,16 +9,7 @@ import { useState } from "react"
 
 function App() {
   return (
-    <div
-      style={{
-        maxWidth: "700px",
-        width: "100%",
-        aspectRatio: "2/3",
-        margin: "0 auto"
-      }}
-    >
-      <ImageSlider images={'cleanup'} />
-    </div>
+      <OurWork />
   )
 }
 
