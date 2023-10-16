@@ -56,28 +56,28 @@ function OurWork() {
             <section className="our-work">
                 <div className="our-work-left">
                     <div className="services-picker">
-                        <div onClick={() => handleClick('greenSpace')} className="service" id="greenspace">
-                            <img src={greenspace} alt="Icon of hand holding plant" />
+                        <div onClick={() => handleClick('greenSpace')} className="service" id="greenspace" tabIndex={0}>
+                            <img className="service-icon" src={greenspace} alt="Icon of hand holding plant" />
                             <p className="service-subtitle">GREEN SPACE</p>
                         </div>
-                        <div onClick={() => handleClick('cleanup')} className="service" id="cleanup">
-                            <img src={cleanup} alt="Icon of a trash can" />
+                        <div onClick={() => handleClick('cleanup')} className="service" id="cleanup" tabIndex={0}>
+                            <img className="service-icon" src={cleanup} alt="Icon of a trash can" />
                             <p className="service-subtitle">CLEANUP</p>
                         </div>
-                        <div onClick={() => handleClick('business')} className="service" id="smallbusiness">
-                            <img src={smallbusiness} alt="Icon of two hands shaking" />
+                        <div onClick={() => handleClick('business')} className="service" id="smallbusiness" tabIndex={0}>
+                            <img className="service-icon" src={smallbusiness} alt="Icon of two hands shaking" />
                             <p className="service-subtitle">SMALL BUSINESS</p>
                         </div>
-                        <div onClick={() => handleClick('community')} className="service" id="community">
-                            <img src={community} alt="Icon of a group of people" />
+                        <div onClick={() => handleClick('community')} className="service" id="community" tabIndex={0}>
+                            <img className="service-icon" src={community} alt="Icon of a group of people" />
                             <p className="service-subtitle">COMMUNITY</p>
                         </div>
-                        <div onClick={() => handleClick('design')} className="service" id="architecture">
-                            <img src={architecture} alt="Icon of architecture tools" />
+                        <div onClick={() => handleClick('design')} className="service" id="architecture" tabIndex={0}>
+                            <img className="service-icon" src={architecture} alt="Icon of architecture tools" />
                             <p className="service-subtitle">ARCHITECTURE & DESIGN</p>
                         </div>
-                        <div onClick={() => handleClick('repair')} className="service" id="repair">
-                            <img src={repair} alt="Icon of a hammer and saw" />
+                        <div onClick={() => handleClick('repair')} className="service" id="repair" tabIndex={0}>
+                            <img className="service-icon" src={repair} alt="Icon of a hammer and saw" />
                             <p className="service-subtitle">REPAIR/BUILD</p>
                         </div>
                     </div>
@@ -85,14 +85,7 @@ function OurWork() {
                         <p>{activeServiceBlurb ? activeServiceBlurb.text : 'Service not found'}</p>
                     </div>
                 </div>
-                <div
-                    style={{
-                        maxWidth: "700px",
-                        width: "100%",
-                        aspectRatio: "2/3",
-                        margin: "0 auto"
-                    }}
-                  className="photo-switcher our-work-right">
+                <div className="photo-switcher our-work-right">
                     <ImageSlider images={activeService}/>
                 </div>
             </section>
