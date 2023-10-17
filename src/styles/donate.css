@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    text-transform: uppercase;
+}
+
+#thank-you {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.525rem;
+    text-align: center;
+}
+
+.card {
+    background-color: pink;
+    width: 44rem;
+    height: 33rem;
+    border-radius: 0.625rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C8102E;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    height: 3.25rem;
+    padding: 2rem;
+}
+
+#card-header-text {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.315rem;
+}

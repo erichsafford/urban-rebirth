@@ -72,6 +72,7 @@
 
 #vertical-bar-anchor {
     position: relative;
+    cursor: default;
 }
 
 #vertical-bar-anchor::before {
@@ -91,9 +92,9 @@
 }
 
 .dashed-line {
-    border: 2px dashed white;
+    border: 3px dashed white;
     position: absolute;
-    width: 2px;
+    width: 3px;
     height: 0;
     z-index: -1;
     top: 5rem;
