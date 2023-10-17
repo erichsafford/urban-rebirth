@@ -23,6 +23,7 @@ function HowToHelp() {
                 </div>
                 <div className="right-container">
                     <button id='vertical-bar-anchor' className='reg-btn'>DONATE</button>
+                    <div className="dashed-line"></div>
                     <button className='lrg-btn'>DONATE NOW!</button>
                 </div>
             </section>
