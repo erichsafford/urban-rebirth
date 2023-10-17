@@ -73,7 +73,7 @@ button {
   transform: translateY(-50%);
 }
 
-#normal-header {
+.normal-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;

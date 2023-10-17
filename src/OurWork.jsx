@@ -46,7 +46,7 @@ function OurWork() {
 
     return (
         <>
-            <header id="normal-header">
+            <header className="normal-header">
                 <Header />
             </header>
             <div className="horizontal-bar centered-div">
