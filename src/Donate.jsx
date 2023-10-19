@@ -4,13 +4,23 @@ import Header from './Header.jsx'
 import { ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
+
 function Donate() {
     const [isMonthly, setIsMonthly] = useState(false)
     const [textActive, setTextActive] = useState('black')
+    const [open, setOpen] = useState(false)
 
     const handleSliderClick = () => {
         setIsMonthly(!isMonthly)
         setTextActive(isMonthly ? 'black' : 'white')
+    }
+
+    const handleOpen = () => {
+        setOpen(true)
+    }
+
+    const handleClose = () => {
+        setOpen(false)
     }
 
     return (
@@ -55,12 +65,14 @@ function Donate() {
                     <p className="donate-option-desc">Custom amount</p>
                 </div>
             </form>
-            <div aria-label='button' className='donate-next-button flex'>
+            <button className='donate-next-button flex' onClick={handleOpen}>
                 <p>NEXT</p>
                 <ArrowRight size={35} color='white'/>
-            </div>
+            </button>
             <div className='button-subtitle flex'>
-                <p>powered by</p>
+                <p className='tooltip'>powered by
+                    <span className='tooltip-text'>Not actually</span>
+                </p>
                 <img src={donate_logo} alt="Bloomerang company logo" />
             </div>
 
