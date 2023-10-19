@@ -5,7 +5,13 @@ import { ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
 function Donate() {
-    const [period, setPeriod] = useState('once')
+    const [isMonthly, setIsMonthly] = useState(false)
+    const [textActive, setTextActive] = useState('black')
+
+    const handleSliderClick = () => {
+        setIsMonthly(!isMonthly)
+        setTextActive(isMonthly ? 'black' : 'white')
+    }
 
     return (
         <>
@@ -23,10 +29,10 @@ function Donate() {
             <h2 className='card-subtitle'>
                 every penny counts. we appreciate your generosity!
             </h2>
-            <div className='card-slider'>
-                <div className='slider-choice-background'></div>
-                <p className='slider-option'>one-time</p>
-                <p className='slider-option'>monthly</p>
+            <div onClick={handleSliderClick} className='card-slider'>
+                <div className={`slider-choice-background ${isMonthly ? 'monthly' : 'one-time'}`}></div>
+                <p className={`slider-option ${isMonthly ? 'text-inactive' : 'text-active'}`}>one-time</p>
+                <p className={`slider-option ${isMonthly ? 'text-active' : 'text-inactive'}`}>monthly</p>
             </div>
             <form className='amount-options-container flex'>
                 <div className="donate-option flex">
