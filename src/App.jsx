@@ -6,6 +6,8 @@ import OurWork from "./OurWork.jsx"
 import HowToHelp from "./HowToHelp.jsx"
 import Donate from "./Donate.jsx"
 import Locations from "./Locations.jsx"
+import BrowserRouter from "./BrowserRouter.jsx"
+import Route from "./Route.jsx"
 import { useState } from "react"
 
 
