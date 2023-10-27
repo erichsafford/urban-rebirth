@@ -8,12 +8,36 @@ import Donate from "./Donate.jsx"
 import Locations from "./Locations.jsx"
 import BrowserRouter from "./BrowserRouter.jsx"
 import Route from "./Route.jsx"
-import { useState } from "react"
 
 
 function App() {
   return (
-      <Locations />
+      <>
+      <BrowserRouter>
+        <Route path="/">
+          <LandingPage />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/ourwork">
+          <OurWork />
+        </Route>
+        <Route path="/howtohelp">
+          <HowToHelp />
+        </Route>
+        <Route path="/donate">
+          <Donate />
+        </Route>
+        <Route path="/locations">
+          <Locations />
+        </Route>
+        <Route path="/donate">
+          <Donate />
+        </Route>
+
+      </BrowserRouter>
+      </>
   )
 }
 
