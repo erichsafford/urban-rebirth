@@ -1,6 +1,7 @@
 import './styles/howToHelp.css'
 import Header from './Header.jsx'
 import Footer from './Footer'
+import Link from './Link.jsx'
 
 function HowToHelp() {
 
@@ -14,7 +15,9 @@ function HowToHelp() {
             </div>
             <section className="main-container">
                 <div className="left-container">
-                    <button className='reg-btn'>VOLUNTEER</button>
+                    <Link to="/volunteer">
+                        <button className='reg-btn'>VOLUNTEER</button>
+                    </Link>
                     <div className="blurb-container">
                         <p>Your donation can be the cornerstone of positive change in urban communities. By supporting our organization's mission of revitalizing neighborhoods and creating thriving, connected communities, you are investing in a brighter future for all.</p>
                         <p>Your generosity fuels the projects that build safer, greener, and more vibrant cities.</p>
@@ -24,7 +27,9 @@ function HowToHelp() {
                 <div className="right-container">
                     <button id='vertical-bar-anchor' className='reg-btn'>DONATE</button>
                     <div className="dashed-line"></div>
-                    <button className='lrg-btn'>DONATE NOW!</button>
+                    <Link to="/donate">
+                        <button className='lrg-btn'>DONATE NOW!</button>
+                    </Link>
                 </div>
             </section>
             <div className="horizontal-bar"></div>

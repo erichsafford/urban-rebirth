@@ -10,6 +10,7 @@
     width: 13.36281rem;
     height: 20.5625rem;
     margin-top: 1.6rem;
+    z-index: 1;
 }
 
 /* TAGLINE */
@@ -40,7 +41,7 @@
     display: flex;
     justify-content: center;
     gap: 2.75rem;
-    margin-top: 3rem;
+    margin-block: 3rem;
   }
 
   .picture-group {

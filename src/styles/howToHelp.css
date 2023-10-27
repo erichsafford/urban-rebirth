@@ -40,7 +40,7 @@
 }
 
 .reg-btn {
-    background-color: #C8102E;
+    background-color: #A00D25;
     width: 18rem;
     height: 5.5rem;
     padding: 0.625rem;
@@ -59,7 +59,7 @@
     width: 28rem;
     height: 9.75rem;
     padding: 0.625rem;
-    background-color: #C8102E;
+    background-color: #A00D25;
     border: none;
     font-family: 'Roboto Mono';
     color: white;
@@ -81,7 +81,7 @@
     height: 60rem;
     position: absolute;
     z-index: -2;
-    background-color: #C8102E;
+    background-color: #A00D25;
     top: -135px;
     left: calc(50% - 50px);
 }

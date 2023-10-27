@@ -1,3 +1,7 @@
+.general-header-container {
+  display: flex;
+}
+
 .header-links {
     display: flex;
     align-items: center;
@@ -45,7 +49,7 @@
     margin-left: 7rem;
   }
 
-  .search-donate a {
+  .donate-button {
     width: 6.9375rem;
     height: 3rem;
     font-family: var(--brand-font);
@@ -57,6 +61,6 @@
     transition: scale 350ms;
   }
 
-  .search-donate a:hover {
+  .donate-button:hover {
     scale: 1.1;
   }
