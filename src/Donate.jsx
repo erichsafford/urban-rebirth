@@ -31,7 +31,7 @@ function Donate() {
         <div className="horizontal-bar"></div>
         <h1 id='thank-you'>THANK YOU FOR SUPPORTING URBAN REBIRTH!</h1>
         <hr></hr>
-        <div className='card'>
+        <div className='donate-card'>
             <div className="card-header">
                 <h1 id='card-header-text'>Choose Amount</h1>
                 <ArrowRight size={35} color='white'/>

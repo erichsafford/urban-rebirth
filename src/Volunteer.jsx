@@ -6,6 +6,7 @@ import './styles/donate.css'
 function Volunteer() {
     function handleSubmit(e) {
         e.preventDefault()
+        alert('Thank you for submitting!')
     }
 
     return (
@@ -16,7 +17,7 @@ function Volunteer() {
         <div className="horizontal-bar"></div>
         <h1 id='thank-you'>THANK YOU FOR VOLUNTEERING!</h1>
         <hr></hr>
-        <div className='card'>
+        <div className='volunteer-card'>
             <div className="card-header">
                 <h1 id='card-header-text'>Choose Amount</h1>
                 <ArrowRight size={35} color='white'/>
@@ -25,10 +26,10 @@ function Volunteer() {
                 PLEASE FILL IN THE FOLLOWING INFORMATION
             </h2>
 
-            <form className='amount-options-container flex'>
-                <input type="text" name="name" placeholder="NAME"/>
-                <input type="email" name="email" placeholder="NAME@DOMAIN.COM"/>
-                <input type="text" name="zip" placeholder="ZIPCODE"/>
+            <form onSubmit={handleSubmit} className='volunteer-form-container flex'>
+                <input className="input-box" type="text" name="name" placeholder="NAME" required/>
+                <input className="input-box" type="email" name="email" placeholder="NAME@DOMAIN.COM" required/>
+                <input className="input-box" type="text" name="zip" placeholder="ZIPCODE"/>
                 <fieldset className="skill-options">
                     <legend>PLEASE MARK THE SKILLS YOU'D LIKE TO CONTRIBUTE</legend>
                     <div className="skill-option">
@@ -53,7 +54,7 @@ function Volunteer() {
                     </div>
                     <div className="skill-option">
                         <input type="checkbox" name="outreach" />
-                        <label for="outreach">outreach</label>
+                        <label for="outreach">community outreach</label>
                     </div>
                     <div className="skill-option">
                         <input type="checkbox" name="landscaping/gardening" />
