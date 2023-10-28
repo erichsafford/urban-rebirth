@@ -57,7 +57,7 @@ function About() {
                         <p className="bold">We are based in green bay, wisconsin and have helped revitalize communities nation-wide.</p>
                     </div>
                     <div id="about-normal">
-                        <p>Our team is comprised of urban planners, architectural designers, artists, journalists, IT professionals, and people who are committed to making the world a little better. We’ve received accolades from the White House, the New York Times, Forbes, Planetizen, and most importantly, the communities we work with. We’re a small but mighty team that works hard to ensure everyone gets a chance at a better future.</p>
+                        <p>At Urban Rebirth, our dedicated team brings together urban planners, architectural designers, artists, journalists, I.T. professionals, and passionate individuals all driven by a shared commitment to creating a positive impact in the world. We're honored to have been recognized by prestigious institutions like the White House, The New York Times, Forbes, and Planetizen. However, our most meaningful recognition comes from the communities we serve. Although we may be small, our determination and hard work ensure that everyone has the opportunity to build a brighter future.</p>
                     </div>
                 </div>
             </section>

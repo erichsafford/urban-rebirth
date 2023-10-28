@@ -7,20 +7,10 @@ import { useState } from 'react'
 
 function Donate() {
     const [isMonthly, setIsMonthly] = useState(false)
-    const [textActive, setTextActive] = useState('black')
-    const [open, setOpen] = useState(false)
 
     const handleSliderClick = () => {
         setIsMonthly(!isMonthly)
         setTextActive(isMonthly ? 'black' : 'white')
-    }
-
-    const handleOpen = () => {
-        setOpen(true)
-    }
-
-    const handleClose = () => {
-        setOpen(false)
     }
 
     return (
@@ -65,14 +55,13 @@ function Donate() {
                     <p className="donate-option-desc">Custom amount</p>
                 </div>
             </form>
-            <button className='donate-next-button flex' onClick={handleOpen}>
+            <button className='donate-next-button flex' onClick={() => alert('Thank you for your (fake) donation!')}>
                 <p>NEXT</p>
                 <ArrowRight size={35} color='white'/>
             </button>
-            <div className='button-subtitle flex'>
-                <p className='tooltip'>powered by
-                    <span className='tooltip-text'>Not actually</span>
-                </p>
+            <div className='button-subtitle flex tooltip'>
+                <span className='tooltip-text'>Not actually</span>
+                <p>powered by</p>
                 <img src={donate_logo} alt="Bloomerang company logo" />
             </div>
 
